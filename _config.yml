@@ -20,7 +20,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 
-# remote_theme           : "mmistakes/minimal-mistakes"
+remote_theme : mmistakes/minimal-mistakes
 
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
@@ -40,7 +40,6 @@ logo                     : # path of logo image to display in the masthead, e.g.
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 
 # breadcrumbs            : false # true, false (default)
-remote_theme : mmistakes/minimal-mistakes
 words_per_minute         : 200
 comments:
   provider               : "disqus"
