@@ -321,8 +321,9 @@ compress_html:
     envs: development
 
 
-disqus_url : "https://vctr7.disqus.com"
-disqus_id : "vctr7"
+# disqus_url : "https://vctr7.disqus.com"
+# disqus_id : "vctr7"
+disqus_shortname : 'vctr-1'
 
 
 # Defaults
