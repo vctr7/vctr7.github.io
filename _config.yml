@@ -1,20 +1,31 @@
 # Welcome to Jekyll!
+
 #
+
 # This config file is meant for settings that affect your entire site, values
+
 # which you are expected to set up once and rarely need to edit after that.
+
 # For technical reasons, this file is *NOT* reloaded automatically when you use
+
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Theme Settings
+
 #
+
 # Review documentation to determine if you should use `theme` or `remote_theme`
+
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
+
 # remote_theme           : "mmistakes/minimal-mistakes"
+
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
+
 locale                   : "en-US"
 title                    : "VCTR"
 title_separator          : "-"
@@ -27,7 +38,9 @@ repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-m
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+
 # breadcrumbs            : false # true, false (default)
+remote_theme : mmistakes/minimal-mistakes
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
@@ -62,13 +75,16 @@ algolia:
 google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
+
 # SEO Related
+
 google_site_verification :
 bing_site_verification   :
 yandex_site_verification :
 naver_site_verification  :
 
 # Social Sharing
+
 twitter:
   username               :
 facebook:
@@ -76,14 +92,18 @@ facebook:
   app_id                 :
   publisher              :
 og_image                 : # Open Graph/Twitter default site image
+
 # For specifying social profiles
+
 # - https://developers.google.com/structured-data/customize/social-profiles
+
 social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
 
 # Analytics
+
 analytics:
   provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
@@ -92,12 +112,13 @@ analytics:
 
 
 # Site Author
+
 author:
-  name             : "Victor Park"
+  name             : "박지호"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am an **amazing** person."
   location         : "Seoul, Korea"
-  email            : "n2201121@gmail.com"
+  email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -119,6 +140,7 @@ author:
       # url: "https://instagram.com/"
 
 # Site Footer
+
 footer:
   links:
     - label: "Twitter"
@@ -142,10 +164,12 @@ footer:
 
 
 # Reading Files
+
 include:
+
   - .htaccess
   - _pages
-exclude:
+    exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
   - vendor
@@ -172,14 +196,15 @@ exclude:
   - tmp
   - /docs # ignore Minimal Mistakes /docs
   - /test # ignore Minimal Mistakes /test
-keep_files:
+    keep_files:
   - .git
   - .svn
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+    encoding: "utf-8"
+    markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 
 # Conversion
+
 markdown: kramdown
 highlighter: rouge
 lsi: false
@@ -188,6 +213,7 @@ incremental: false
 
 
 # Markdown Processing
+
 kramdown:
   input: GFM
   hard_wrap: false
@@ -200,12 +226,14 @@ kramdown:
 
 
 # Sass/SCSS
+
 sass:
   sass_dir: _sass
   style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
 
 # Outputting
+
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
@@ -213,7 +241,9 @@ timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
+
 plugins:
+
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
@@ -221,7 +251,9 @@ plugins:
   - jekyll-include-cache
 
 # mimic GitHub Pages with --safe
+
 whitelist:
+
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
@@ -230,36 +262,59 @@ whitelist:
 
 
 # Archives
+
 #  Type
+
 #  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
+
 #  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
+
 #  Path (examples)
+
 #  - Archive page should exist at path when using Liquid method or you can
+
 #    expect broken links (especially with breadcrumbs enabled)
+
 #  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
+
 #  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
+
 #  - <base_path>/my-awesome-category/index.html ~> path: /
+
 category_archive:
   type: liquid
   path: /categories/
 tag_archive:
   type: liquid
   path: /tags/
+
 # https://github.com/jekyll/jekyll-archives
+
 # jekyll-archives:
+
 #   enabled:
+
 #     - categories
+
 #     - tags
+
 #   layouts:
+
 #     category: archive-taxonomy
+
 #     tag: archive-taxonomy
+
 #   permalinks:
+
 #     category: /categories/:name/
+
 #     tag: /tags/:name/
 
 
 # HTML Compression
+
 # - https://jch.penibelst.de/
+
 compress_html:
   clippings: all
   ignore:
@@ -267,17 +322,20 @@ compress_html:
 
 
 # Defaults
+
 defaults:
+
   # _posts
+
   - scope:
-      path: ""
-      type: posts
+    path: ""
+    type: posts
     values:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
+      comments: # true
       share: true
       related: true
-remote_theme : mmistakes/minimal-mistakes
+    
 
